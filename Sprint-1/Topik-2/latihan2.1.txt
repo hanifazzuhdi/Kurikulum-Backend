@@ -12,4 +12,4 @@
 1. var_dump(true&&false) => output mengembalikan nilai boolean false karena operator && harus sama-sama memiliki nilai yang true
 2. var_dump(true||false) => output mengembalikan nilai boolean true karena operator || boleh memiliki nilai yang false tetapi tidak boleh semuanya
 3. var_dump(false||false) => output mengembalikan nilai boolean false karena 2 nilai yang dibandingkan sama-sama memiliki nilai false
-4. var_dump(!false) => output mengembalikan nilai true karena operator ! akan membalikkan hasil 
+4. var_dump(!false) => output mengembalikan nilai true karena operator ! akan membalikkan hasil.
