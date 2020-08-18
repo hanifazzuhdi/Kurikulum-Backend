@@ -1,0 +1,41 @@
+<--! Pseudo Code cara mengoperasikan Microsoft Word -->
+
+// Hubungkan ke file fungsi
+
+require 'functions.php'
+
+// Buat Variabel
+
+$youHaveComputer = true;
+$microsoftWord = true;
+
+// Nyalakan Komputer
+
+    if ($youHaveComputer == true) {
+        Jalankan fungsi powerOn
+    } else {
+        jalankan alert ("Buy now")
+    }
+
+// Cek apakah ada Microsoft Word
+
+    if ($microsoftWord == true) {
+        jalankan fungsi buka microsoftWord.exe
+    } else {
+        jalankan alert ("Please install and buy Microsoft Office in your Computer")
+    }
+
+// Tulis dokumen 
+
+    if (fungsi microsoftWord.exe dijalankan){
+        Tulis dokumen yang ingin disimpan
+    }    
+
+// Jika sudah selesai menulis
+
+    if (sudah selesai menulis) {
+        
+        Simpan file ke dalam Komputer
+
+        return tutup microsoftWord.exe 
+    }
