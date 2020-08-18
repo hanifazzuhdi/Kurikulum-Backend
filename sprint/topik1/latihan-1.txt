@@ -1,0 +1,9 @@
+<--! Pseudo Code cara mebgoperasikan Microsoft Word -->
+
+// Buka Microsoft Word
+
+// Tulis dokumen yang ingin disimpan
+
+// Jika sudah selesai menulis simpan dokumen yang telah ditulis
+
+// Tutup Microsoft Word
