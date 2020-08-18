@@ -1,4 +1,4 @@
-<-- Pseudo-Code menghitung Bilangan genap atau ganjil dengan Javascript -->
+<-- Pseudo-Code menentukan Bilangan genap atau ganjil dengan Javascript -->
 
 /1/ User masukkan angka yang ingin dicek
 
