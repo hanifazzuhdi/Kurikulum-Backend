@@ -1,4 +1,4 @@
-<--! Pseudo Code cara mebgoperasikan Microsoft Word -->
+<-- Pseudo Code cara mebgoperasikan Microsoft Word -->
 
 // Buka Microsoft Word
 
