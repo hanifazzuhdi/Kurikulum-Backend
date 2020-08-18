@@ -1,0 +1,33 @@
+<-- Pseudo-Code menghitung Bilangan genap atau ganjil dengan Javascript -->
+
+/1/ User masukkan angka yang ingin dicek
+
+prompt ("");
+
+/2/ Cek apakah ganjil 
+
+jika (3 % 2 = 0) {
+    tampilkan alert "Angka ini ganjil"
+}
+
+/3/ Cek apakah genap 
+
+jika (2 % 2 = 0) {
+    tampilkan alert "Angka ini genap"
+}
+
+/4/ Apakah user ingin lagi 
+
+tampilkan confirm ("Mau lagi ?")
+
+/5/ Jika User klik oke
+
+jika user klik oke kembalikan nilai true dan buka kembali langkah ke 1
+
+/6/ Jika klik cancel
+
+jika user klik cancel lanjutkan ke langkah berikutnya
+
+/7/ ucapkan terimaksih
+
+tampilkan alet ("Terimakasih") sebagai penutup
