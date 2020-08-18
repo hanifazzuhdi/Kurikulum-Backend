@@ -1,1 +1,2 @@
-Output yang dihasilkan oleh which php adalah /usr/bin/php. Hal ini menunjukkan bahwa php yang kita install berada didalam folder bin yang terdapat di folder usr
+- Output yang dihasilkan oleh which php adalah /usr/bin/php 
+- Hal ini menunjukkan bahwa php yang kita install berada didalam folder bin yang terdapat di folder usr

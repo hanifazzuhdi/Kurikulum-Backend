@@ -1,4 +1,4 @@
-<--! Pseudo Code cara mengoperasikan Microsoft Word -->
+<-- Pseudo Code cara mengoperasikan Microsoft Word -->
 
 // Buat fungsi
 
