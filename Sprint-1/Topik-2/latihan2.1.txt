@@ -1,0 +1,15 @@
+// Penjelasan output dari text yang dibold disoal 1
+
+1. var_dump($d + $e) => output mengembalikan nilai integer dengan value 5 karena hasil tambah dari $d + $e
+2. var_dump($e == $f) => output mengembalikan nilai boolean true karena $e dan $f mempunyai nilai yang sama meskipun berbeda tipe
+3. var_dump($e === $f) => output mengembalikan nilai boolean false karena $e dan $f memiliki tipe data yang berbeda. Sama dengan 3 berarti operator persamaan identitas
+4. var_dump($g) => output mengembalikan nilai NULL karena isi dari $g adalah nilai null
+5. var_dump((bool)$g) => output mengembalikan nilai boolean false karena NULL adalah nilai hampa/kosong
+6. var_dump((int)$g) => output mengembalikan nilai 0 karena NULL adalah nilai kosong
+
+// Penjelasan output dari text yang dibold disoal 2
+
+1. var_dump(true&&false) => output mengembalikan nilai boolean false karena operator && harus sama-sama memiliki nilai yang true
+2. var_dump(true||false) => output mengembalikan nilai boolean true karena operator || boleh memiliki nilai yang false tetapi tidak boleh semuanya
+3. var_dump(false||false) => output mengembalikan nilai boolean false karena 2 nilai yang dibandingkan sama-sama memiliki nilai false
+4. var_dump(!false) => output mengembalikan nilai true karena operator ! akan membalikkan hasil 
