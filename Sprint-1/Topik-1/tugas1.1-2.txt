@@ -6,13 +6,13 @@ prompt ("");
 
 /2/ Cek apakah ganjil 
 
-jika (3 % 2 = 0) {
+jika (angka yang diinput % 2 = 1) {
     tampilkan alert "Angka ini ganjil"
 }
 
 /3/ Cek apakah genap 
 
-jika (2 % 2 = 0) {
+jika (angka yang diinput % 2 = 0) {
     tampilkan alert "Angka ini genap"
 }
 
