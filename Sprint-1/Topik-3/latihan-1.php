@@ -3,10 +3,9 @@
 $n = 9;
 $x = 1;
 $angka = 0;
-echo $angka . ' ';
-while ($x < $n) {
-    $angka = $angka + 2;
+while ($x <= $n) {
     echo $angka . " ";
+    $angka = $angka + 2;
     $x++;
 }
 
