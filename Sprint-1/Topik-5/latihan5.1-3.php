@@ -19,10 +19,11 @@ function gantiArray($value)
 
     print_r($arr);
 
+    echo "Array Baru = ";
+
     foreach ($arr as $x) {
         echo $x . " ";
     }
 }
 
 $hasil = gantiArray($value);
-
