@@ -26,17 +26,3 @@ function gantiArray($value)
 
 $hasil = gantiArray($value);
 
-
-
-
-// function gantiArray($arr2)
-// {
-//     return $arr = $arr2;
-// }
-
-// gantiArray([6, 9, 12, 15, 18, 21, 24, 27]);
-
-// echo "Array Baru = ";
-// foreach ($arr as $arr2) {
-//     echo "$arr2 ";
-// }
