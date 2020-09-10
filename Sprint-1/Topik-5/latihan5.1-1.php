@@ -1,7 +1,5 @@
 <?php
 
-// Latihan 1 (STATIS)
-
 function calcRectangleArea(int $width, int $length)
 {
     return $width * $length;
