@@ -41,14 +41,19 @@ function modus($nilai)
     arsort($modus);
 
 
-    print_r($modus);
+    $hasil = array_key_first($modus);
+    $frekuensi = max($modus);
+
+
+    echo "nilai paling banyak = $hasil" . "\n" . "Frekuensi = $frekuensi" . "\n";
+
+
 }
 
 
-// 5, 9, 6, 7, 9, 8, 10, 7, 8
 mean($hasil_nilai);
 median($hasil_nilai);
-echo "Modus : " . modus($hasil_nilai);
+modus($hasil_nilai);
 
 // Latihan 2
 
