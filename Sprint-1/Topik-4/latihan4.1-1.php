@@ -44,21 +44,10 @@ function modus($nilai)
     $hasil = array_key_first($modus);
     $frekuensi = max($modus);
 
-
     echo "nilai paling banyak = $hasil" . "\n" . "Frekuensi = $frekuensi" . "\n";
-
-
 }
 
 
 mean($hasil_nilai);
 median($hasil_nilai);
 modus($hasil_nilai);
-
-// Latihan 2
-
-rsort($hasil_nilai);
-echo " 3 Nilai Terbesar = $hasil_nilai[0], $hasil_nilai[1], $hasil_nilai[2] \n";
-
-sort($hasil_nilai);
-echo " 3 Nilai Terkecil = $hasil_nilai[0], $hasil_nilai[1], $hasil_nilai[2] ";
