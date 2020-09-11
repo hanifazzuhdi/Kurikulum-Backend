@@ -8,6 +8,8 @@ for ($i = 1; $i <= $nilai; $i++) {
     $hasil_nilai[] = trim(fgets(STDIN));
 }
 
+// print_r($hasil_nilai);
+
 // fungsi urut
 sort($hasil_nilai);
 
@@ -20,7 +22,6 @@ function mean($nilai)
 // fungsi median
 function median($nilai)
 {
-
     if (count($nilai) % 2 == 1) {
         $median = (count($nilai) + 1) / 2;
 
@@ -40,14 +41,22 @@ function modus($nilai)
     $modus = array_count_values($nilai);
     arsort($modus);
 
+    echo "Modus = ";
+    foreach ($modus as $k => $v) {
+        if ($v == max($modus)) {
+            echo $k . ", ";
+        }
+    }
 
-    $hasil = array_key_first($modus);
-    $frekuensi = max($modus);
+    echo "\n" . "frekuensi = " . max($modus) . "\n";
 
-    echo "nilai paling banyak = $hasil" . "\n" . "Frekuensi = $frekuensi" . "\n";
+    // $hasil = array_key_first($modus);
+    // $frekuensi = max($modus);
+
+    // echo "nilai paling banyak = $hasil" . "\n" . "Frekuensi = $frekuensi" . "\n";
 }
 
-
+// Panggil semua fungsi
 mean($hasil_nilai);
 median($hasil_nilai);
 modus($hasil_nilai);

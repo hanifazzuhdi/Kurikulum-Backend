@@ -113,6 +113,7 @@ function urutUmur($a, $b)
 
     <h3>d. Jumlah Santri Umur Kurang dari 25</h3>
     <?php
+
     $getUmur = [];
 
     foreach ($santri as $d) {
@@ -126,6 +127,7 @@ function urutUmur($a, $b)
 
     <h3>e. Rata-rata Umur Santri</h3>
     <?php
+
     $getRata = [];
 
     foreach ($santri as $e) {
