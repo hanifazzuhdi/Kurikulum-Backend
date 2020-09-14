@@ -36,21 +36,27 @@ for ($i = 1; $i <= $jumlah; $i++) {
     $hasil_input[] = trim(fgets(STDIN));
 }
 
+// print_r($hasil_input);
+
 function pisahAngka($hasil_input)
 {
 
+    $pecah = implode("", $hasil_input);
 
-    foreach ($hasil_input as $x) {
-        if ($x == 0) {
-            asort($hasil_input);
-            array_shift($hasil_input);
-        }
+    $hasil = explode("0", $pecah);
+
+    // print_r($hasil);
+
+    foreach ($hasil as $k => $v) {
+        $split[] = str_split($v);
+        sort($split[$k]);
     }
 
-    return $hasil_input;
-    // print_r($hasil_input);
+    $result = array_merge($split[0], $split[1]);
+
+    return $result;
 }
-// array_filter($hasil_input, "pisahAngka");
+
 $hasil = pisahAngka($hasil_input);
 
 print_r($hasil);
@@ -63,28 +69,30 @@ $jumlah = trim(fgets(STDIN));
 for ($i = 1; $i <= $jumlah; $i++) {
     echo "Data ke $i : " . "\n";
     echo "Nama Murid : ";
-    $nama = trim(fgets(STDIN));
+    $data['nama'] = trim(fgets(STDIN));
     echo "NIK : ";
-    $nik = trim(fgets(STDIN));
+    $data['nik'] = trim(fgets(STDIN));
     echo "Jurusan : ";
-    $jurusan = trim(fgets(STDIN));
+    $data['jurusan'] = trim(fgets(STDIN));
     echo "Divisi : ";
-    $divisi = trim(fgets(STDIN));
+    $data['divisi'] = trim(fgets(STDIN));
     echo "Usia : ";
-    $usia = trim(fgets(STDIN));
+    $data['usia'] = trim(fgets(STDIN));
 
-    $hasil = [
-        "nama" => $nama,
-        "nik" => $nik,
-        "jurusan" => $jurusan,
-        "divisi" => $divisi,
-        "usia" => $usia
-    ];
+    // $hasil = [
+    //     "nama" => $nama,
+    //     "nik" => $nik,
+    //     "jurusan" => $jurusan,
+    //     "divisi" => $divisi,
+    //     "usia" => $usia
+    // ];
 
-    $students[] =  $hasil;
+    $students[] = $data;
 }
 
-print_r($students);
+
+
+// print_r($students);
 
 echo "Santri dengan minat Backend : " . "\n";
 
@@ -105,6 +113,8 @@ echo "Santri umur kurang dari 25 = " . count($getUmur) . "\n";
 
 function urutUmur($a, $b)
 {
+    var_dump($a);
+    var_dump($b);
     return $a["usia"] > $b["usia"];
 }
 
