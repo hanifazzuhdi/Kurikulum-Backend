@@ -1,7 +1,6 @@
 <?php
 
 // Kelola Perpustakaan
-
 class Perpustakaan
 {
     protected $buku = [
@@ -64,12 +63,12 @@ class kelolaPinjaman extends Perpustakaan
         array_splice($this->buku, ($index - 1), 1);
 
         echo "Kembalikan sebelum " . date("d-", time() + 172800) . date("m-Y")  . "\n";
-        print_r($this->buku);
+        // print_r($this->buku);
     }
 
     public function kembalikanBuku()
     {
-        print_r($this->buku);
+        // print_r($this->buku);
         echo "Terimakasih Sudah Mengembalikan Buku " . "\n";
     }
 }
