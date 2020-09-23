@@ -1,0 +1,7 @@
+TUGAS-1 
+
+1. Normalisasi 1NF = Pada Normalisasi 1NF tidak diperbolehkan adanya duplikat data pada table, normalisasi ini sama dengan menyederhanakan dari UNF menjadi lebih mudah untuk dipahami
+
+2. Normalisasi 2NF = Suatu relasi memenuhi 2NF jika relasi tersebut memenuhi 1NF dan setiap atribut yang non key bergantung secara fungsional terhadap Primary key. Pada normalisasi ini setiap data pada tabel harus dipisah berdasarkan primary key nya
+
+3. Normalisasi 3NF = suatu relasi memenuhi 3NF jika relasi tersebut memenuhi 2NF dan setiap atribut non key tidak mempunyai transitive functional dependency kepada primary key, jika terdapat suatu atribut yang tidak bergantung pada primary key tapi bergantung pada field yang lain maka atribut-atribut tersebut perlu dipisah ke tabel baru. Normalisasi ini sama saja dengan menyederhanakan dari tipe 1NF dan 2NF menjadi berbagai bagian sehingga mudah dipahami
