@@ -30,8 +30,6 @@ class KoneksiPdo
 
             $tambah->execute([$namaSantri, $nilaiSantri]);
         }
-
-        print_r($tambah);
     }
 
     public function jumlahSantri()
@@ -86,6 +84,20 @@ class KoneksiPdo
         $result = $nilaiJelek->fetchAll(pdo::FETCH_ASSOC);
         print_r($result);
     }
+
+    public function tampilData()
+    {
+
+        $query = "SELECT namaSantri,nilaiSantri FROM dataSantri ORDER BY nilaiSantri DESC";
+
+        $tampil = $this->connect->prepare($query);
+        $tampil->execute();
+
+        $result = $tampil->fetchAll(pdo::FETCH_ASSOC);
+
+        print_r($result);
+        echo "Terimkasih\n";
+    }
 }
 
 $sambung = new KoneksiPdo();
@@ -100,3 +112,20 @@ $sambung->rataNilai();
 $sambung->nilaiBagus();
 // Nilai dibawah 65
 $sambung->nilaijelek();
+// Tampil Data
+echo "Mau Tampilkan Data ? (y/n)";
+$pilih = trim(fgets(STDIN));
+switch ($pilih) {
+    case 'y':
+
+        $sambung->tampilData();
+        break;
+
+    case 'n':
+        echo "Terimakasih\n";
+        break;
+
+    default:
+        echo "Inputan Salah!\n";
+        break;
+}
