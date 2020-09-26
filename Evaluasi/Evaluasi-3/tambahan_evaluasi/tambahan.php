@@ -30,6 +30,8 @@ class KoneksiPdo
 
             $tambah->execute([$namaSantri, $nilaiSantri]);
         }
+
+        print_r($tambah);
     }
 
     public function jumlahSantri()
@@ -89,7 +91,7 @@ class KoneksiPdo
 $sambung = new KoneksiPdo();
 
 // Tambah data
-// $sambung->insertData();
+$sambung->insertData();
 // Hitung jumlah
 $sambung->jumlahSantri();
 // rata-rata Santri
