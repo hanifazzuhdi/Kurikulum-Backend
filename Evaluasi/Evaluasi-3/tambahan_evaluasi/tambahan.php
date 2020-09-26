@@ -43,7 +43,7 @@ class KoneksiPdo
 
         echo "Jumlah Santri : ";
         foreach ($result as $hasil) {
-            echo $hasil;
+            echo $hasil . "\n";
         }
     }
 
@@ -55,11 +55,10 @@ class KoneksiPdo
         $rataNilai->execute();
 
         $result = $rataNilai->fetchAll(pdo::FETCH_COLUMN);
-        print_r($result);
 
         echo "Rata-rata Nilai : ";
         foreach ($result as $hasil) {
-            echo $hasil;
+            echo $hasil . "\n";
         }
     }
 
