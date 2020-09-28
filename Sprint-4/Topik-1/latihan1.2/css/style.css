@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: cursive
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav h3 {
+    margin-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+nav ul {
+    margin-right: 20px;
+}
+
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav ul li:nth-child(3) {
+    margin-right: 35px;
+}
+
+nav ul .logout {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.150s;
+}
+
+nav ul .logout:hover {
+    background-color: lightblue;
+}
+
+/* FORM */
+.content {
+    /* background: rgb(238, 174, 202);
+    background: linear-gradient(342deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.content .form {
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.content .form fieldset {
+    padding: 20px 65px 50px 65px;
+}
+
+.content .form fieldset legend {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.content .form input {
+    width: 250px;
+    height: 20px;
+    margin-top: 5px;
+    display: block;
+}
+
+.content .form button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.content .form label {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.content .form button {
+    background-color: #005af5;
+    color: white;
+    border-radius: 4px;
+    width: 85px;
+    height: 35px;
+    transition: 0.150s;
+}
+
+.content .form button:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+/* TABEL */
+
+.table table {
+    margin: 0 auto 100px;
+
+}
+
+.table h3 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.table .post {
+    width: 600px;
+}
+
+.table .get {
+    width: 800px;
+}
+
+.table thead {
+    background-color: lightblue;
+}
+
+.table .aksi,
+a {
+    text-align: center;
+    text-decoration: none;
+    color: salmon;
+}
