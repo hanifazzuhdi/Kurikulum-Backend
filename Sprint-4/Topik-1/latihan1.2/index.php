@@ -76,45 +76,41 @@ $dataKurir = $conn->tampilData("kurir");
         </div>
     </nav>
 
-    <div class="container">
-        <div class="content">
+    <div class="content">
+        <div class="form">
+            <fieldset>
+                <legend>Method Post</legend>
+                <form action="" method="post">
+                    <label for="namaBarang">Nama Barang : </label>
+                    <input type="text" name="namaBarang" id="namaBarang">
 
-            <div class="form">
-                <fieldset>
-                    <legend>Method Post</legend>
-                    <form action="" method="post">
-                        <label for="namaBarang">Nama Barang : </label>
-                        <input type="text" name="namaBarang" id="namaBarang">
+                    <label for="hargaBarang">Harga Barang : </label>
+                    <input type="text" name="hargaBarang" id="hargaBarang">
 
-                        <label for="hargaBarang">Harga Barang : </label>
-                        <input type="text" name="hargaBarang" id="hargaBarang">
+                    <button type="submit" name="submit">Submit</button>
+                </form>
+            </fieldset>
+        </div>
 
-                        <button type="submit" name="submit">Submit</button>
-                    </form>
-                </fieldset>
-            </div>
+        <div class="form">
+            <fieldset>
+                <legend>Method Get</legend>
+                <form action="" method="get">
+                    <label for="kurir">Nama Kurir : </label>
+                    <input type="text" name="kurir" id="kurir">
 
-            <div class="form">
-                <fieldset>
-                    <legend>Method Get</legend>
-                    <form action="" method="get">
-                        <label for="kurir">Nama Kurir : </label>
-                        <input type="text" name="kurir" id="kurir">
+                    <label for="pengirim">Nama Pengirim : </label>
+                    <input type="text" name="pengirim" id="pengirim">
 
-                        <label for="pengirim">Nama Pengirim : </label>
-                        <input type="text" name="pengirim" id="pengirim">
+                    <label for="asal">Asal Barang : </label>
+                    <input type="text" name="asal" id="asal">
 
-                        <label for="asal">Asal Barang : </label>
-                        <input type="text" name="asal" id="asal">
+                    <label for="tujuan">Tujuan Barang : </label>
+                    <input type="text" name="tujuan" id="tujuan">
 
-                        <label for="tujuan">Tujuan Barang : </label>
-                        <input type="text" name="tujuan" id="tujuan">
-
-                        <button type="submit" name="submit">Submit</button>
-                    </form>
-                </fieldset>
-            </div>
-
+                    <button type="submit" name="submit">Submit</button>
+                </form>
+            </fieldset>
         </div>
     </div>
 
