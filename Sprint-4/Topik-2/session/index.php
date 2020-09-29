@@ -2,11 +2,12 @@
 
 session_start();
 
-if (!$_SESSION) {
+if (!isset($_SESSION['test'])) {
     header("Location: login.php");
 }
 
 if (isset($_POST['submit'])) {
+    $_SESSION = [];
     session_destroy();
     session_unset();
 

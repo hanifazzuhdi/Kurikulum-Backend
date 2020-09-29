@@ -1,7 +1,7 @@
 <?php
 
 // cek apabila tidak ada cookie
-if (!($_COOKIE)) {
+if (!isset(($_COOKIE['test']))) {
     header("Location: login.php");
 }
 

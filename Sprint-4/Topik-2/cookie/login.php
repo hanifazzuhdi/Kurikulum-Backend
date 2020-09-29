@@ -1,7 +1,7 @@
 <?php
 
 // Cek apakah ada cookie
-if ($_COOKIE) {
+if (isset($_COOKIE['test'])) {
     header("Location: index.php");
 }
 
