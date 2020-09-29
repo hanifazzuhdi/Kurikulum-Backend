@@ -100,50 +100,48 @@ class connectPdo
     }
 }
 
-class Users extends connectPdo
-{
+// class Users extends connectPdo
+// {
 
+//     public function registrasi($data)
+//     {
+//         $email = strtolower(stripslashes($data['email']));
+//         $password = $data['password'];
+//         $confirm = $data['confirm'];
 
+//         // cek Username
+//         $get = $this->conn->prepare("SELECT email FROM user WHERE email = '$email'");
 
-    public function registrasi($data)
-    {
-        $email = strtolower(stripslashes($data['email']));
-        $password = $data['password'];
-        $confirm = $data['confirm'];
+//         $get->execute();
 
-        // cek Username
-        $get = $this->conn->prepare("SELECT email FROM user WHERE email = '$email'");
+//         if ($get->fetchAll(PDO::FETCH_ASSOC)) {
 
-        $get->execute();
+//             echo "<script>
+//                     alert('Email Sudah Terdaftar');
+//                     document.location.href='registrasi.php'
+//                 </script>";
 
-        if ($get->fetchAll(PDO::FETCH_ASSOC)) {
+//             exit;
+//         }
 
-            echo "<script>
-                    alert('Email Sudah Terdaftar');
-                    document.location.href='registrasi.php'
-                </script>";
+//         // Cek confirm password
+//         if ($password !== $confirm) {
 
-            exit;
-        }
+//             "<script>
+//                     alert('Konfirmasi Password Tidak Cocok!');
+//                     document.location.href='registrasi.php'
+//                 </script>";
 
-        // Cek confirm password
-        if ($password !== $confirm) {
+//             exit;
+//         }
 
-            "<script>
-                    alert('Konfirmasi Password Tidak Cocok!');
-                    document.location.href='registrasi.php'
-                </script>";
+//         // Enkrispi password
+//         $password = password_hash($password, PASSWORD_DEFAULT);
 
-            exit;
-        }
+//         // INSERT USER
+//         $insert = $this->conn->prepare("INSERT INTO user (email, password) VALUES ('$email','$password')");
 
-        // Enkrispi password
-        $password = password_hash($password, PASSWORD_DEFAULT);
-
-        // INSERT USER
-        $insert = $this->conn->prepare("INSERT INTO user (email, password) VALUES ('$email','$password')");
-
-        $insert->execute();
-        return $insert->rowCount();
-    }
-}
+//         $insert->execute();
+//         return $insert->rowCount();
+//     }
+// }
