@@ -125,6 +125,7 @@ class Users extends connectPdo
 
             exit;
         }
+
         // Cek confirm password
         if ($password !== $confirm) {
 
