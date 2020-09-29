@@ -99,3 +99,50 @@ class connectPdo
         return $hapus->rowCount();
     }
 }
+
+class Users extends connectPdo
+{
+
+
+
+    public function registrasi($data)
+    {
+        $email = strtolower(stripslashes($data['email']));
+        $password = $data['password'];
+        $confirm = $data['confirm'];
+
+        // cek Username
+        $get = $this->conn->prepare("SELECT email FROM user WHERE email = '$email'");
+
+        $get->execute();
+
+        if ($get->fetchAll(PDO::FETCH_ASSOC)) {
+
+            echo "<script>
+                    alert('Email Sudah Terdaftar');
+                    document.location.href='registrasi.php'
+                </script>";
+
+            exit;
+        }
+        // Cek confirm password
+        if ($password !== $confirm) {
+
+            "<script>
+                    alert('Konfirmasi Password Tidak Cocok!');
+                    document.location.href='registrasi.php'
+                </script>";
+
+            exit;
+        }
+
+        // Enkrispi password
+        $password = password_hash($password, PASSWORD_DEFAULT);
+
+        // INSERT USER
+        $insert = $this->conn->prepare("INSERT INTO user (email, password) VALUES ('$email','$password')");
+
+        $insert->execute();
+        return $insert->rowCount();
+    }
+}

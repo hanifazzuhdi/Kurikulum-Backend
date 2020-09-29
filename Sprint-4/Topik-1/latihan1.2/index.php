@@ -13,8 +13,8 @@ try {
 
 // logic form post
 if (isset($_POST['submit'])) {
-    $nama = $_POST['namaBarang'];
-    $harga = $_POST['hargaBarang'];
+    $nama = htmlspecialchars($_POST['namaBarang']);
+    $harga = htmlspecialchars($_POST['hargaBarang']);
 
     if ($conn->insertData($nama, $harga) > 0) {
         echo "<script>
@@ -26,10 +26,10 @@ if (isset($_POST['submit'])) {
 
 // logic form get
 if (isset($_GET['submit'])) {
-    $kurir = $_GET['kurir'];
-    $pengirim = $_GET['pengirim'];
-    $asal = $_GET['asal'];
-    $tujuan = $_GET['tujuan'];
+    htmlspecialchars($kurir = $_GET['kurir']);
+    htmlspecialchars($pengirim = $_GET['pengirim']);
+    htmlspecialchars($asal = $_GET['asal']);
+    htmlspecialchars($tujuan = $_GET['tujuan']);
 
     if ($conn->insertKurir($kurir, $pengirim, $asal, $tujuan) > 0) {
         echo "<script>
@@ -68,7 +68,7 @@ $dataKurir = $conn->tampilData("kurir");
         </div>
         <div>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#">Barang</a></li>
                 <li><a href="#">Kurir</a></li>
                 <button type="submit" name="logout" class="logout">Logout</button>
@@ -76,7 +76,7 @@ $dataKurir = $conn->tampilData("kurir");
         </div>
     </nav>
 
-    <div class="content">
+    <div class="content" id="home">
         <div class="form">
             <fieldset>
                 <legend>Method Post</legend>
