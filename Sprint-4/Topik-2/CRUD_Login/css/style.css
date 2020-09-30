@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    font-family: cursive;
+    background-color: #f5fafc;
+
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(117, 117, 117, 0.9);
+}
+
+nav h3 {
+    margin-left: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    color: whitesmoke;
+}
+
+nav ul {
+    margin-right: 30px;
+}
+
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav ul li:nth-child(3) {
+    margin-right: 25px;
+}
+
+nav ul .logout {
+    font-weight: 500;
+    width: 80px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid black;
+    background-color: #2686e0;
+    transition: 0.150s;
+}
+
+nav ul .logout:hover {
+    background-color: lightblue;
+    color: whitesmoke;
+}
+
+/* MAIN */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y-mandatory;
+}
+
+.container .section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+/* SECTION 1 (FORM) */
+.container .section:nth-child(1) {
+    background-image: url('../img/gunung1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.content .form {
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.content .form fieldset {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px 65px 50px 65px;
+    background-color: whitesmoke;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.content .form fieldset legend {
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255);
+
+}
+
+.content .form input,
+label {
+    width: 250px;
+    padding: 2px;
+    margin-top: 4px;
+    display: block;
+}
+
+.content .form button {
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #2686e0;
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 4px;
+    width: 85px;
+    height: 35px;
+    transition: 0.150s;
+}
+
+.content .form button:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+/* SECTION 2 (TABEL BARANG) */
+
+.container .section:nth-child(2) {
+    background-image: linear-gradient(to right bottom, #051937, #222e48, #3c4559, #565d6a, #73767b);
+}
+
+.section .table h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.section .table table.post {
+    background-color: white;
+    margin: 30px auto;
+    width: 700px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+}
+
+.section .table table thead {
+    background-color: #42A5F5;
+    font-weight: 400;
+
+}
+
+/* SECTION 3 (TABEL KURIR) */
+.container .section:nth-child(3) {
+    background-image: linear-gradient(to right top, #051937, #222e48, #3c4559, #565d6a, #73767b);
+}
+
+.table .get {
+    width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+}
+
+.table .aksi,
+a {
+    text-align: center;
+    text-decoration: none;
+    color: salmon;
+    font-weight: 500;
+}
