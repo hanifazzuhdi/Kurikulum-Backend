@@ -7,7 +7,7 @@ $conn = new connectPdo();
 $id = $_GET['id'];
 
 // Ambil Data
-$data = $conn->tampilData("kurir");
+$data = $conn->tampilData("kurir WHERE id = $id");
 
 foreach ($data as $kurir) {
     $kurir;

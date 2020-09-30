@@ -7,7 +7,7 @@ $conn = new connectPdo();
 $id = $_GET['id'];
 
 // Panggil Fungsi
-$data = $conn->tampilData("barang");
+$data = $conn->tampilData("barang WHERE id = $id");
 
 // Looping Array multidimensi
 foreach ($data as $barang) {
