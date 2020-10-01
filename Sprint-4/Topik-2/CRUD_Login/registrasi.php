@@ -65,21 +65,6 @@ if (isset($_POST['submit'])) {
 
     </div>
 
-    <!-- <div class="container"> -->
-    <!-- <form action="" method="post"> -->
-    <!-- <label for="email">Email</label> -->
-    <!-- <input type="email" name="email" id="email"> -->
-    <!--  -->
-    <!-- <label for="password">Password</label> -->
-    <!-- <input type="password" name="password" id="password"> -->
-    <!--  -->
-    <!-- <label for="confirm">Confirm Password</label> -->
-    <!-- <input type="password" name="confirm" id="confirm"> -->
-    <!--  -->
-    <!-- <button type="submit" name="submit">Daftar</button> -->
-    <!-- </form> -->
-    <!-- </div> -->
-
 </body>
 
 </html>
