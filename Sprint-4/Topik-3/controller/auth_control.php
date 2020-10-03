@@ -16,7 +16,7 @@ class Users
         }
     }
 
-    public function registrasi($email, $password, $confirm)
+    public function registrasi($email, $nama, $password, $confirm)
     {
         // CEK EMAIL 
         $query = "SELECT email FROM user WHERE email = '$email'";
@@ -43,7 +43,7 @@ class Users
         // ENKRIPSI DAN INSERT AKUN
         $password = password_hash($password, PASSWORD_DEFAULT);
 
-        $query = "INSERT INTO user (email, password) VALUES ('$email', '$password')";
+        $query = "INSERT INTO user (nama,email, password) VALUES ('$nama','$email', '$password')";
         $insert = $this->conn->query($query);
 
         return $insert->rowCount();
@@ -61,7 +61,7 @@ class Users
         $row = $get->fetchAll(PDO::FETCH_ASSOC);
 
         // CEK KETERSEDIAAN EMAIL 
-        if ($row[0]['email'] === $email) {
+        if ($get->rowCount() === 1) {
 
             // CEK PASSWORD 
             if (password_verify($password, $row[0]['password'])) {
