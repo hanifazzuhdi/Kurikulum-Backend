@@ -58,7 +58,7 @@ class AuthController
         $pass = $data["password"];
         $confirm = $data["confirm"];
 
-        // Cek ketersediaan email 
+        // Cek ketersediaan email
         $get = $this->conn->query("SELECT email FROM admin WHERE email = '$email'");
 
         if ($get->fetchAll(PDO::FETCH_ASSOC)) {

@@ -1,7 +1,6 @@
 <?php
 
 // Latihan 
-
 class persegiPanjang
 {
     public static $panjang,

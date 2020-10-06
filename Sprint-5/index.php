@@ -1,25 +1,6 @@
 <?php
 
-// require 'App/init.php';
-
-function lingkaran($class)
-{
-    $file = "App/Lingkaran/" . $class . ".php";
-    if (is_readable($file)) {
-        require $file;
-    }
-}
-
-function segitiga($class)
-{
-    $file = "App/Segitiga/" . $class . ".php";
-    if (is_readable($file)) {
-        require $file;
-    }
-}
-
-spl_autoload_register("lingkaran");
-spl_autoload_register("segitiga");
+require 'App/init.php'
 
 ?>
 
@@ -60,6 +41,7 @@ spl_autoload_register("segitiga");
             width: 80px;
             height: 30px;
             margin: 25px 10px;
+            background-color: lightblue;
         }
 
         .container form input {
