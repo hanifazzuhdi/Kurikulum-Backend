@@ -19,10 +19,10 @@ if (isset($_POST["logout"])) {
 $santri = $conn->tampil("SELECT * FROM santri");
 
 // logic cari   <== Belum selesai
-// if (isset($_POST["cari"])) {
-//     $cari = $_POST["key"];
-//     $santri = $conn->cari("SELECT * FROM santri WHERE namaSantri LIKE %'$cari'%");
-// }
+if (isset($_POST["cari"])) {
+    $cari = $_POST["key"];
+    $santri = $conn->cari($cari);
+}
 
 
 

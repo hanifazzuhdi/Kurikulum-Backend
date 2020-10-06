@@ -22,10 +22,11 @@ class AuthController
         $pass = $data["password"];
 
         // cek email
-        $login = $this->conn->query("SELECT * FROM admin");
+        $login = $this->conn->query("SELECT * FROM admin WHERE email = '$email' ");
 
         $row = $login->fetchAll(PDO::FETCH_ASSOC);
-        if ($row[0]["email"] === $email) {
+
+        if ($login->rowCount() === 1) {
 
             // cek password
             if (password_verify($pass, $row[0]["password"])) {

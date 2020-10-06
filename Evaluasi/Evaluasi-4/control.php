@@ -67,10 +67,12 @@ class Controller
 
         return $hapus->rowCount();
     }
-    // public function cari($query)
-    // {
-    //     return $this->tampil($query);
-    // }
+    public function cari($key)
+    {
+        $query = "SELECT * FROM santri WHERE namaSantri LIKE '%$key%' ";
+
+        return $this->tampil($query);
+    }
 }
 
 $conn = new Controller();
