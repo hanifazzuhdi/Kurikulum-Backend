@@ -4,7 +4,6 @@ class AuthController
 {
     public function __construct()
     {
-
         $host = "localhost";
         $user = "hanif";
         $pass = "123";
