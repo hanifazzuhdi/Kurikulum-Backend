@@ -8,6 +8,6 @@ class rumusSegitiga
     {
         $luas = 0.5 * $a * $t;
 
-        echo "Luas Lingkaran = " . $luas;
+        echo "Luas Segitiga = " . $luas;
     }
 }
