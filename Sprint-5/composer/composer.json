@@ -1,0 +1,19 @@
+{
+    "name": "hanif/sprint_5",
+    "description": "Tugas autoloader Sprint-5",
+    "authors": [
+        {
+            "name": "hanifazzuhdi",
+            "email": "hnfhanif52@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+      "psr-4": {
+        "segitiga\\" : "app/segitiga",
+        "lingkaran\\" : "app/lingkaran"
+      }
+    }
+
+}
