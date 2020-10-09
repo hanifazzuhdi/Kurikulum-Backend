@@ -1,0 +1,13 @@
+{
+    "name": "hanif/evaluasi-5",
+    "description": "Evaluasi-5",
+    "authors": [
+        {
+            "name": "hanifazzuhdi",
+            "email": "hnfhanif52@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.1"
+    }
+}
