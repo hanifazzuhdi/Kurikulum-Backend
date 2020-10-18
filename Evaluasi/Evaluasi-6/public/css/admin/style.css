@@ -1,0 +1,273 @@
+.container {
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+/* Nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 12vh;
+    background-color: #2686e0;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    margin-left: 3vw;
+}
+
+nav ul li {
+    display: inline;
+    color: black;
+    transition: 0.2s;
+}
+
+nav ul li:hover {
+    color: white
+}
+
+nav ul a:nth-child(2) {
+    margin-left: 1.8vw;
+}
+
+nav form {
+    position: absolute;
+    top: 30%;
+    right: 40px;
+}
+
+nav form button {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #2686e0;
+    border-radius: 3px;
+    color: black;
+    background-color: whitesmoke;
+    transition: 0.2s;
+}
+
+nav form button:hover {
+    color: white;
+    background-color: #2686e0;
+}
+
+/* INDEX */
+.index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80.5vw;
+    margin: 14vh auto 0;
+    padding: 40px 0;
+}
+
+
+.index .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 200px;
+    margin: 30px;
+    background-color: lightgray;
+    border-radius: 7px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.index .card:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1494881135443-61e5abc36c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+}
+
+.index .card:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1494881135443-61e5abc36c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+}
+
+.index .card:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1494881135443-61e5abc36c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+}
+
+.index .card:nth-child(4) {
+    background-image: url("https://images.unsplash.com/photo-1494881135443-61e5abc36c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+}
+
+.index .card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.index .card a h2 {
+    /* padding: 80px; */
+    color: white;
+    transition: 0.2s;
+}
+
+.index .card a h2:hover {
+    color: black;
+}
+
+/* Produk */
+
+.produk {
+    width: 90vw;
+    margin: 17vh auto 0;
+    padding: 60px;
+    position: relative;
+    background-color: whitesmoke;
+    /* border: 1px solid rgba(0, 0, 0, 1); */
+}
+
+.produk form {
+    position: absolute;
+    top: 0;
+    right: 10vw;
+}
+
+.produk form input {
+    padding: 8px;
+    width: 250px;
+}
+
+.produk form button {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #2686e0;
+    border-radius: 3px;
+    width: 60px;
+    padding: 8px;
+    background-color: #2686e0;
+}
+
+.produk .list {
+    width: 70vw;
+    margin: auto;
+}
+
+.produk .head {
+    padding: 12px;
+    background-color: #2686e0;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.produk ul .body li:nth-child(even) {
+    padding: 9px;
+    background-color: white;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.produk ul .body li:nth-child(odd) {
+    padding: 9px;
+    background-color: #E0E0E0;
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.produk ul .body p {
+    font-size: 13px;
+}
+
+.produk .list .body li {
+    position: relative;
+}
+
+.produk .list .body .aksi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.produk .list .body .aksi a {
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 2px;
+    border: 0.5px solid gray;
+    background-color: #F44336;
+}
+
+.produk .list .body .aksi a:nth-child(1) {
+    background-color: #2686e0;
+}
+
+.produk .list .body .aksi a:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #64DD17;
+}
+
+/* Tambah */
+.tambah {
+    width: 1000px;
+    margin: 14vh auto 0;
+    background-color: white;
+}
+
+.tambah h1 {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+.tambah form {
+    padding: 0 40px 40px;
+}
+
+.tambah form .content {
+    margin-bottom: 15px;
+}
+
+.tambah form .content input,
+select,
+textarea {
+    outline: none;
+    margin-top: 8px;
+    padding: 7px;
+    width: 500px;
+    transition: 0.2s;
+}
+
+.tambah form .content input:focus,
+select:focus,
+textarea:focus {
+    background-color: whitesmoke;
+    border: 1px solid lightskyblue;
+    outline: 1px solid lightskyblue;
+}
+
+.tambah form .content button {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #2686e0;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    background-color: #2686e0;
+}

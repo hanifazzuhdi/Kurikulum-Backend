@@ -1,0 +1,17 @@
+{
+    "name": "hanif/sopi",
+    "description": "Evaluasi MVC",
+    "authors": [
+        {
+            "name": "hanifazzuhdi",
+            "email": "hnfhanif52@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "core\\" : "app/core"
+        }
+    }
+}
