@@ -83,7 +83,7 @@ class ProductController extends Controller
             return $this->sendResponse(true, "Data Success Updated", $produk, 202);
         }
 
-        return $this->sendResponse(false, "Data Add Failed !", NULL, 400);
+        return $this->sendResponse(false, "Data Update Failed !", NULL, 400);
     }
 
     public function destroy($id)
