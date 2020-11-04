@@ -70,7 +70,7 @@ class Admin extends Controller
         if ($this->model("Admin_model")->deleteData($id) > 0) {
             echo "<script>
                         alert ('Data Berhasil DiHapus');
-                        document.location.href = 'http://localhost/sopi/public/admin/produk'
+                        document.location.href='" . BASEURL . "/admin/produk" . "'
                     </script>";
 
             exit;
@@ -78,7 +78,7 @@ class Admin extends Controller
 
             echo "<script>
                         alert ('Data Gagal DiHapus');
-                        document.location.href = 'http://localhost/sopi/public/admin/produk'
+                        document.location.href='" . BASEURL . "/admin/produk" . "'
                     </script>";
             exit;
         }
