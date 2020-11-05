@@ -66,7 +66,7 @@ class ProductController extends Controller
 
         $produk = Product::find($id);
 
-        // echo $request;
+        // dd($produk);
 
         if ($produk) {
             $produk->name = $request->name ? $request->name : $produk->name;
